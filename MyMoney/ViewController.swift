@@ -9,6 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var answerOutlet: UILabel!
+    @IBOutlet weak var numberOutlet: UITextField!
+    @IBAction func changeButton(_ sender: Any) {
+        
+        let douNumber1 = numberOutlet.text
+        
+        let douAnswer = Double(douNumber1!)! * Double(33.44)
+        
+        answerOutlet.text = String("แลกได้ =\(douAnswer)")
+        
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,5 +37,5 @@ class ViewController: UIViewController {
     }
 
 
-}
+}// Main Class
 
